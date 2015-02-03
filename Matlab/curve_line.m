@@ -1,0 +1,16 @@
+load('plotdata.mat');
+x = num(:,1);
+y1 = num(:,2);
+y2 = num(:,3);
+y3 = num(:,4);
+y4 = num(:,5);
+figure;
+plot(x,y1,'-*','LineWidth',1,'color',[49/255,143/255,86/255]);
+hold on;
+plot(x,y2,'-o','LineWidth',1,'color',[49/255,130/255,189/255]);
+plot(x,y3,'-s','LineWidth',1,'color',[254/255,178/255,76/255]);
+plot(x,y4,'-<','LineWidth',1,'color',[250/255,159/255,181/255]);
+legend('J48','NB','SVM','LG','Location','SouthEast');
+title('2-D Line Plot');
+xlabel('Imbalance Ratio');
+ylabel('F-measure');
