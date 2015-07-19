@@ -7,7 +7,7 @@ import subprocess
 import os
 
 repos = []
-AuthToken = "7e9bcbb256d146a76bcac3dc6542ab4e571166f2"
+AuthToken = "Your Token"
 
 def getUrlConfig(page):
 	prefix = "https://" + AuthToken + ":x-oauth-basic@" + "api.github.com/search/repositories"
